@@ -4,7 +4,7 @@ import { useState } from "react"
 import { getRandomJoke } from "@/lib/data/getRandomJoke"
 
 export const Joke = () => {
-  const [joke, setJoke] = useState('')
+  const [joke, setJoke] = useState('Click the button to generate a random joke.')
 
   const generateRandomJoke = async () => {
     const data = await getRandomJoke()
